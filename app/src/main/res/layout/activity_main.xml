@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/text_prefs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="Shared Preferences" />
+
+        <TextView
+            android:id="@+id/text_sqlite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="SQLite Database" />
+
+        <TextView
+            android:id="@+id/text_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="ROOM Database" />
+
+        <TextView
+            android:id="@+id/text_files"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="Internal / External Files" />
+
+        <TextView
+            android:id="@+id/text_content_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="Content Provider (get user contacts)" />
+
+        <TextView
+            android:id="@+id/text_file_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="File Provider (send image to another app)" />
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>
